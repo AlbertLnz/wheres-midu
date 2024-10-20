@@ -1,4 +1,7 @@
 import type { Character } from 'src/types'
+import { Cloudinary } from '@cloudinary/url-gen'
+
+const cloudName = import.meta.env.PUBLIC_CLOUDINARY_CLOUD_NAME
 
 type Props = {
   character: Character
@@ -15,14 +18,16 @@ const Game = ({
   miduHelpTxt,
   surrenderTxt,
 }: Props) => {
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: 'dxgurhzge',
+    },
+  })
+  const myImage = cld.image(imgStringId)
+
   return (
     <div>
-      <p>{character}</p>
-      <p>{imgStringId}</p>
-      <p>{positionAnswers.x}</p>
-      <p>{positionAnswers.y}</p>
-      <p>{miduHelpTxt}</p>
-      <p>{surrenderTxt}</p>
+      <img src={myImage.toURL()} alt='' />
     </div>
   )
 }

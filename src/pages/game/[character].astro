@@ -3,6 +3,7 @@ import Layout from '@/layout/Layout.astro'
 import Game from '@/components/Game.tsx'
 import gameProps from '@/data/gameProps.ts'
 import type { Character } from 'src/types'
+import { cloudinaryFormDataFnct } from '@/data/cloudinaryFormData.ts'
 
 export function getStaticPaths() {
   return [
@@ -16,6 +17,14 @@ export function getStaticPaths() {
 const { character } = Astro.params
 
 const infoGameProps = gameProps[character as Character]
+
+const cloudinaryApiKey = import.meta.env.CLOUDINARY_API_KEY
+const cloudinaryImgsFolder = import.meta.env.PUBLIC_CLOUDINARY_IMGS_FOLDER
+const cloudinaryFormData = await cloudinaryFormDataFnct({
+  apiKey: cloudinaryApiKey,
+  folder: cloudinaryImgsFolder,
+})
+const formDataObj = Object.fromEntries(cloudinaryFormData.entries())
 ---
 
 <Layout
@@ -24,5 +33,5 @@ const infoGameProps = gameProps[character as Character]
   mainClass=''
 >
   <h1 class='text-3xl'>{character}</h1>
-  <Game character={character as Character} {...infoGameProps} />
+  <Game client:load character={character as Character} {...infoGameProps} />
 </Layout>
