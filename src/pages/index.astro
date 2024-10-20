@@ -1,10 +1,15 @@
 ---
 import Layout from '../layout/Layout.astro'
+import Typewriter from '../hooks/useTypewriter'
 ---
 
 <Layout
   title="Where's Midu"
   description="Where's Midu es una página inspirada en 'Where's Waldo"
 >
-  <h1 class='text-3xl font-bold underline'>Welcome to Astro</h1>
+  <header class=''>
+    <h1 class='text-7xl tracking-wide'>
+      Where&apos;s... <Typewriter client:load text='midudev' speed={200} />
+    </h1>
+  </header>
 </Layout>
