@@ -2,9 +2,10 @@
 export interface Props {
   title: string
   description: string
+  mainClass: string
 }
 
-const { title, description } = Astro.props
+const { title, description, mainClass } = Astro.props
 ---
 
 <!doctype html>
@@ -16,11 +17,29 @@ const { title, description } = Astro.props
     <title>{title}</title>
   </head>
   <body>
-    <slot />
+    <main class={mainClass}>
+      <slot />
+    </main>
   </body>
 </html>
 
 <style is:global>
+  :root {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Bubu Ghost', sans-serif;
+    min-height: 100vh;
+    max-width: 100vw;
+    color: #d1d5db;
+    overflow-x: hidden;
+    letter-spacing: 0.02rem;
+    background: linear-gradient(to bottom, #010101 80%, #6d0007c8 100%);
+  }
+
   @font-face {
     font-family: 'Bubu Ghost';
     src: url('./fonts/bubu-ghost.regular.ttf') format('truetype');
