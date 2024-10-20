@@ -1,0 +1,53 @@
+---
+interface Props {
+  character: string
+  description: string
+  imageUrl1: string
+  imageUrl2: string
+}
+
+const { character, description, imageUrl1, imageUrl2 } = Astro.props
+---
+
+<article
+  class='card flex gap-x-4 border-2 border-red-950 px-2 pt-2 rounded-lg hover:cursor-pointer'
+>
+  <img src={imageUrl1} class='default-img size-24' alt={character} />
+  <img src={imageUrl2} class='halloween-img size-24' alt={character} />
+  <div>
+    <h2 class='font-semibold text-lg'>{`¿Dónde está ${character}?`}</h2>
+    <p class='ml-2 text-[14px] line-clamp-3'>
+      <span>{character}</span>
+      {description}
+    </p>
+  </div>
+</article>
+
+<style>
+  .card {
+    position: relative;
+  }
+
+  .halloween-img {
+    position: absolute;
+    transition: opacity 0.6s ease-in-out;
+    object-fit: cover;
+  }
+
+  .default-img {
+    transition: opacity 0.6s ease-in-out;
+    opacity: 1;
+  }
+
+  .halloween-img {
+    opacity: 0;
+  }
+
+  .card:hover .default-img {
+    opacity: 0;
+  }
+
+  .card:hover .halloween-img {
+    opacity: 1;
+  }
+</style>
