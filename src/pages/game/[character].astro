@@ -1,0 +1,22 @@
+---
+import Layout from '@/layout/Layout.astro'
+
+export function getStaticPaths() {
+  return [
+    { params: { character: 'Midudev' } },
+    { params: { character: 'Altman' } },
+    { params: { character: 'PHP' } },
+    { params: { character: 'Lady_Gaga' } },
+    { params: { character: 'Colby' } },
+  ]
+}
+const { character } = Astro.params
+---
+
+<Layout
+  title={`Where's ${character.replace('_', ' ')}`}
+  description={`Where's ${character}, juego de donde está ${character}`}
+  mainClass=''
+>
+  <h1 class='text-3xl'>{character}</h1>
+</Layout>

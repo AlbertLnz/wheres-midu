@@ -7,6 +7,7 @@ interface Props {
 }
 
 const { character, description, imageUrl1, imageUrl2 } = Astro.props
+const gameUrl = `/game/${character.replace(' ', '_')}`
 ---
 
 <article
@@ -21,6 +22,7 @@ const { character, description, imageUrl1, imageUrl2 } = Astro.props
       {description}
     </p>
   </div>
+  <a href={gameUrl} class='h-full w-full absolute top-0 left-0'></a>
 </article>
 
 <style>
