@@ -1,0 +1,35 @@
+@media (width < 1300px) {
+  body {
+    background-colro: #171717;
+  }
+
+  #root {
+    display: none;
+  }
+}
+
+#app {
+  max-width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.7fr 0.3fr;
+  align-items: center;
+  justify-items: center;
+  overflow: hidden;
+}
+
+#myCanvas {
+  border: 2px solid red;
+  max-height: 90vh;
+  cursor: grab;
+  width: 100%;
+  height: 100%;
+}
+
+#myCanvas:active {
+  cursor: grabbing;
+}
+
+#gameContainer {
+  max-height: 90vh;
+}

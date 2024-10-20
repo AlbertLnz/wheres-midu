@@ -32,6 +32,5 @@ const formDataObj = Object.fromEntries(cloudinaryFormData.entries())
   description={`Where's ${character}, juego de donde está ${character}`}
   mainClass=''
 >
-  <h1 class='text-3xl'>{character}</h1>
   <Game client:load character={character as Character} {...infoGameProps} />
 </Layout>
