@@ -1,0 +1,17 @@
+body {
+  font-family: 'Bubu Ghost', sans-serif;
+  background-color: #171717;
+  color: #d1d5db;
+  overflow-x: hidden;
+  letter-spacing: 0.02rem;
+}
+
+h1 {
+  font-family: 'Slimespooky Outline', sans-serif;
+  color: transparent;
+  text-shadow:
+    1px 1px 0 #ffff00,
+    -1px -1px 0 #ff000080,
+    1px -1px 0 #ff000080,
+    -1px 1px 0 #ff000080;
+}

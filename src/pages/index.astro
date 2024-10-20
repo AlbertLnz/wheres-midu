@@ -1,6 +1,7 @@
 ---
 import Layout from '@/layout/Layout.astro'
 import Typewriter from '@/hooks/useTypewriter'
+import '@/styles/home.css'
 ---
 
 <Layout
@@ -12,4 +13,9 @@ import Typewriter from '@/hooks/useTypewriter'
       Where&apos;s... <Typewriter client:load text='midudev' speed={200} />
     </h1>
   </header>
+
+  <p class='text-xs italic'>
+    Las imágenes del juego están diseñadas por IA, por lo que su resultado en
+    facciones es limitada.
+  </p>
 </Layout>

@@ -19,3 +19,19 @@ const { title, description } = Astro.props
     <slot />
   </body>
 </html>
+
+<style is:global>
+  @font-face {
+    font-family: 'Bubu Ghost';
+    src: url('./fonts/bubu-ghost.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Slimespooky Outline';
+    src: url('./fonts/slimespooky.outline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+</style>
