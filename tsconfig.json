@@ -10,7 +10,8 @@
       "@/layout/*": ["src/layout/*"],
       "@/pages/*": ["src/pages/*"],
       "@/styles/*": ["src/styles/*"],
-      "@/sections/*": ["src/sections/*"]
+      "@/sections/*": ["src/sections/*"],
+      "@/data/*": ["src/data/*"]
     }
   }
 }
