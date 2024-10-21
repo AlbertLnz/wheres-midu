@@ -26,11 +26,24 @@ export const ui = {
     'game.info.3': 'y marca en el lugar aproximado con el botón derecho.',
     'game.miduHelpTxt':
       'Activa la miduAyuda para obtener una pista de donde está',
+    'game.miduHelpTxt.midu':
+      'Midu se encuentra en un lugar seguro, donde nadie lo puede ver, acompañado de miduGato y su framework favorito.',
+    'game.miduHelpTxt.altman': 'Altman está en...',
+    'game.miduHelpTxt.php': 'PHP está en...',
+    'game.miduHelpTxt.gaga': 'Gaga está en...',
+    'game.miduHelpTxt.colby': 'Colby está en...',
+
     'game.cloudinaryHelp.title': 'La Cloudinary ayuda',
     'game.miduHelp.title': 'La MiduAyuda',
     'game.centerImg.title': 'Centrar la imágen',
     'game.attemptBtn': 'Realizar intento',
 
+    'game.surrenderTxt.midu':
+      'Me rindo... Dejaré morir a Midu y que se lo coman en X',
+    'game.surrenderTxt.altman': 'Me rindo...(Altman)',
+    'game.surrenderTxt.php': 'Me rindo... (PHP)',
+    'game.surrenderTxt.gaga': 'Me rindo... (Gaga)',
+    'game.surrenderTxt.colby': 'Me rindo... (Colby)',
     'game.surrenderBtn': 'Resolver',
 
     'game.helps.cloudinary1': '- ¡La',
@@ -60,11 +73,24 @@ export const ui = {
     'game.info.2': 'center the image',
     'game.info.3': 'and mark the approximate location with the right button.',
     'game.miduHelpTxt': 'Activate MiduHelp to get a hint about where he is',
+    'game.miduHelpTxt.midu':
+      'Midu is in a safe place where no one can see him, accompanied by miduGato and his favorite framework.',
+    'game.miduHelpTxt.altman': 'Altman is in...',
+    'game.miduHelpTxt.php': 'PHP is in...',
+    'game.miduHelpTxt.gaga': 'Gaga is in...',
+    'game.miduHelpTxt.colby': 'Colby is in...',
+
     'game.cloudinaryHelp.title': 'The Cloudinary help',
     'game.miduHelp.title': 'The MiduHelp',
     'game.centerImg.title': 'Center the image',
     'game.attemptBtn': 'Make attempt',
 
+    'game.surrenderTxt.midu':
+      'I give up... I will let Midu die and be eaten in X',
+    'game.surrenderTxt.altman': 'I give up...(Altman)',
+    'game.surrenderTxt.php': 'I give up... (PHP)',
+    'game.surrenderTxt.gaga': 'I give up... (Gaga)',
+    'game.surrenderTxt.colby': 'I give up... (Colby)',
     'game.surrenderBtn': 'Resolve',
 
     'game.helps.cloudinary1': '- The',

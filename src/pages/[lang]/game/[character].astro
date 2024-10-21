@@ -1,7 +1,7 @@
 ---
 import Layout from '@/layout/Layout.astro'
 import Game from '@/components/Game.tsx'
-import gameProps from '@/data/gameProps.ts'
+import { gameProps } from '@/data/gameProps.ts'
 import type { Character, PageLanguages } from 'src/types'
 
 export function getStaticPaths() {
@@ -13,10 +13,10 @@ export function getStaticPaths() {
     }))
   )
 }
-const { character } = Astro.params
+const { character } = Astro.params as { character: Character }
 const { lang } = Astro.params as { lang: PageLanguages }
 
-const infoGameProps = gameProps[character as Character]
+const infoGameProps = gameProps(lang, character)
 ---
 
 <Layout
@@ -24,10 +24,5 @@ const infoGameProps = gameProps[character as Character]
   description={`Where's ${character}, juego de donde está ${character}`}
   mainClass=''
 >
-  <Game
-    client:load
-    lang={lang}
-    character={character as Character}
-    {...infoGameProps}
-  />
+  <Game client:load lang={lang} character={character} {...infoGameProps} />
 </Layout>
