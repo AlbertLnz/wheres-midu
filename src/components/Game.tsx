@@ -9,11 +9,14 @@ import {
   type savePreviousFrame,
   type MarkerPosition,
   type Character,
+  type PageLanguages,
 } from 'src/types.d'
 import type React from 'preact/compat'
 import { cloudinaryFormDataFnct } from '@/data/cloudinaryFormData'
+import { useTranslations } from 'src/i18n/utils'
 
 type Props = {
+  lang: PageLanguages
   character: Character
   imgStringId: string
   positionAnswers: { x: number; y: number }
@@ -24,12 +27,15 @@ type Props = {
 const cloudName = import.meta.env.PUBLIC_CLOUDINARY_CLOUD_NAME
 
 const Game = ({
+  lang,
   character,
   imgStringId,
   positionAnswers,
   miduHelpTxt,
   surrenderTxt,
 }: Props) => {
+  const t = useTranslations(lang)
+
   const initialGameLives = 3
   const initialCloudinaryHelps = 1
   const initialMiduHelps = 1
@@ -37,7 +43,7 @@ const Game = ({
   const [cloudinaryHelps, setCloudinaryHelps] = useState(initialCloudinaryHelps)
   const [miduHelps, setMiduHelps] = useState(initialMiduHelps)
   const [miduHelpMsg, setMiduHelpMsg] = useState(
-    `Activa la miduAyuda para obtener una pista de donde está ${character}.`
+    `${t('game.miduHelpTxt')} ${character.replace('_', ' ')}.`
   )
   const [fetchingMsg, setFetchingMsg] = useState('')
   const [surrenderState, setSurrenderState] = useState(false)
@@ -332,9 +338,9 @@ const Game = ({
         <canvas id='myCanvas' ref={canvasRef}></canvas>
         <div className='absolute w-full flex justify-between items-center top-0 left-0 px-2 italic transform -translate-y-full text-[13px]'>
           <p>
-            Para marcar una respuesta,{' '}
-            <span className='font-semibold'>centra la imágen</span> y marca en
-            el lugar aproximado con el botón derecho.
+            {t('game.info.1')}{' '}
+            <span className='font-semibold'>{t('game.info.2')}</span>{' '}
+            {t('game.info.3')}
           </p>
           <p className='text-blue-400 font-bold text-[13px] relaxed tracking-wider'>
             {fetchingMsg}
@@ -357,7 +363,7 @@ const Game = ({
         >
           <img src={cloudinaryLogo.src} className='w-7' alt='cloudinaryLogo' />
           <p className='text-lg'>
-            La Cloudinary ayuda{' '}
+            {t('game.cloudinaryHelp.title')}{' '}
             <span className='text-xs font-bold'>
               ({cloudinaryHelps}/{initialCloudinaryHelps})
             </span>
@@ -370,7 +376,7 @@ const Game = ({
         >
           <img src={miduWink.src} className='size-7' alt='miduWink' />
           <p className='text-lg'>
-            La miduAyuda{' '}
+            {t('game.miduHelp.title')}{' '}
             <span className='text-xs font-bold'>
               ({miduHelps}/{initialMiduHelps})
             </span>
@@ -384,12 +390,12 @@ const Game = ({
           onClick={handleCenter}
         >
           <img src={centerCanvas.src} className='size-7' alt='centerCanvas' />
-          <p className='text-lg'>Centrar la imágen</p>
+          <p className='text-lg'>{t('game.centerImg.title')}</p>
         </button>
 
         <button className='w-full py-2 bg-lime-800' onClick={handleTestFindIt}>
           <p className='text-lg'>
-            Realizar intento{' '}
+            {t('game.attemptBtn')}{' '}
             <span className='text-base'>{`(${gameLives}/${initialGameLives})`}</span>
           </p>
         </button>
@@ -407,19 +413,19 @@ const Game = ({
           }`}
           onClick={handleShowCharacter}
         >
-          Resolver
+          {t('game.surrenderBtn')}
         </button>
 
         <div className='absolute bottom-0 mb-4 text-sm italic space-y-2 pr-8'>
           <p>
-            - ¡La <span className='font-bold'>Cloudinary ayuda</span> te permite
-            mejorar la resolución de una trozo de imágen en alta resolución!
-            ¡¡Pero tendrás que observar rápido!! ¡Porque a los 10 segundos la
-            imágen vuelve a la calidad original!
+            {t('game.helps.cloudinary1')}{' '}
+            <span className='font-bold'>{t('game.helps.cloudinary2')}</span>{' '}
+            {t('game.helps.cloudinary3')}
           </p>
           <p>
-            - La <span className='font-bold'>miduAyuda</span> te da una pequeña
-            pista de donde se encuentra Midu.
+            {t('game.helps.midu1')}{' '}
+            <span className='font-bold'>{t('game.helps.midu2')}</span>{' '}
+            {t('game.helps.midu3')}
           </p>
         </div>
       </div>

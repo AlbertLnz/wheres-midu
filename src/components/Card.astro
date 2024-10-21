@@ -1,5 +1,5 @@
 ---
-import { getLangFromUrl } from 'src/i18n/utils'
+import { getLangFromUrl, useTranslations } from 'src/i18n/utils'
 interface Props {
   character: string
   description: string
@@ -11,6 +11,7 @@ const { character, description, imageUrl1, imageUrl2 } = Astro.props
 
 const lang = getLangFromUrl(Astro.url)
 const gameUrl = `${lang}/game/${character.replace(' ', '_')}`
+const t = useTranslations(lang)
 ---
 
 <article
@@ -19,7 +20,9 @@ const gameUrl = `${lang}/game/${character.replace(' ', '_')}`
   <img src={imageUrl1} class='default-img size-24' alt={character} />
   <img src={imageUrl2} class='halloween-img size-24' alt={character} />
   <div>
-    <h2 class='font-semibold text-lg'>{`¿Dónde está ${character}?`}</h2>
+    <h2 class='font-semibold text-lg'>
+      {`${t('home.card.title')} ${character}?`}
+    </h2>
     <p class='ml-2 text-[14px] line-clamp-3'>
       <span>{character}</span>
       {description}
