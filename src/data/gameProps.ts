@@ -6,19 +6,19 @@ export function gameProps(lang: PageLanguages, character: Character) {
 
   const gamePropsInfo: Record<Character, GameProps> = {
     Midudev: {
-      imgStringId: 'ow5wyljx6yxkrxacow1b',
+      imgStringId: 'qfcwvkcfpdxcom1nb1d9',
       positionAnswers: { x: 687.1609014001452, y: 751.9959950962743 },
       miduHelpTxt: t('game.miduHelpTxt.midu'),
       surrenderTxt: t('game.surrenderTxt.midu'),
     },
     Altman: {
-      imgStringId: 'ow5wyljx6yxkrxacow1b',
+      imgStringId: 'ejp3m8ha77kktxhnsdu4',
       positionAnswers: { x: 123, y: 456 },
       miduHelpTxt: t('game.miduHelpTxt.altman'),
       surrenderTxt: t('game.surrenderTxt.altman'),
     },
     PHP: {
-      imgStringId: 'ow5wyljx6yxkrxacow1b',
+      imgStringId: 'gzy8tlrfjbygy7aw5mmm',
       positionAnswers: { x: 123, y: 456 },
       miduHelpTxt: t('game.miduHelpTxt.php'),
       surrenderTxt: t('game.surrenderTxt.php'),
