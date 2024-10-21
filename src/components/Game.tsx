@@ -337,11 +337,16 @@ const Game = ({
       <div className='relative'>
         <canvas id='myCanvas' ref={canvasRef}></canvas>
         <div className='absolute w-full flex justify-between items-center top-0 left-0 px-2 italic transform -translate-y-full text-[13px]'>
-          <p>
-            {t('game.info.1')}{' '}
-            <span className='font-semibold'>{t('game.info.2')}</span>{' '}
-            {t('game.info.3')}
-          </p>
+          <div class='flex items-center justify-center gap-x-2'>
+            <a href={`/${lang}`} class='text-white/80 hover:text-white'>
+              {t('game.backBtn')}{' '}
+            </a>
+            <p>
+              {t('game.info.1')}{' '}
+              <span className='font-semibold'>{t('game.info.2')}</span>{' '}
+              {t('game.info.3')}
+            </p>
+          </div>
           <p className='text-blue-400 font-bold text-[13px] relaxed tracking-wider'>
             {fetchingMsg}
           </p>
