@@ -1,3 +1,5 @@
+export type PageLanguages = 'es' | 'en'
+
 export type Character = 'Midudev' | 'Altman' | 'PHP' | 'Lady_Gaga' | 'Colby'
 
 export interface GameProps {

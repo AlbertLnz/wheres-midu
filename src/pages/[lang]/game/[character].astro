@@ -3,16 +3,15 @@ import Layout from '@/layout/Layout.astro'
 import Game from '@/components/Game.tsx'
 import gameProps from '@/data/gameProps.ts'
 import type { Character } from 'src/types'
-import { cloudinaryFormDataFnct } from '@/data/cloudinaryFormData.ts'
 
 export function getStaticPaths() {
-  return [
-    { params: { character: 'Midudev' } },
-    { params: { character: 'Altman' } },
-    { params: { character: 'PHP' } },
-    { params: { character: 'Lady_Gaga' } },
-    { params: { character: 'Colby' } },
-  ]
+  const languages = ['es', 'en']
+  const characters = ['Midudev', 'Altman', 'PHP', 'Lady_Gaga', 'Colby']
+  return languages.flatMap((lang) =>
+    characters.map((character) => ({
+      params: { lang, character },
+    }))
+  )
 }
 const { character } = Astro.params
 

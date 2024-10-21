@@ -3,7 +3,15 @@ import Layout from '@/layout/Layout.astro'
 import Typewriter from '@/hooks/useTypewriter'
 import Cards from '@/sections/Cards.astro'
 import Ghosts from '@/components/Ghosts.astro'
+import { useTranslations } from 'src/i18n/utils'
 import '@/styles/home.css'
+import { type PageLanguages } from 'src/types.d'
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'en' } }, { params: { lang: 'es' } }]
+}
+const { lang } = Astro.params as { lang: PageLanguages }
+const t = useTranslations(lang)
 ---
 
 <Layout
@@ -19,8 +27,7 @@ import '@/styles/home.css'
   </header>
 
   <p class='text-xs italic'>
-    Las imágenes del juego están diseñadas por IA, por lo que su resultado en
-    facciones es limitada.
+    {t('home.alert')}
   </p>
 
   <Cards />

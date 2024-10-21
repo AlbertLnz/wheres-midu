@@ -1,4 +1,3 @@
-import type { Character } from 'src/types'
 import { Cloudinary } from '@cloudinary/url-gen'
 import { useEffect, useRef, useState } from 'preact/hooks'
 import cloudinaryLogo from '../assets/imgs/cloudinaryLogo.webp'
@@ -6,7 +5,11 @@ import miduWink from '../assets/imgs/miduWink.webp'
 import centerCanvas from '../assets/imgs/centerCanvas.webp'
 import '@/styles/game.css'
 import { urlToBlob } from 'src/utils/urlToBlob'
-import { type savePreviousFrame, type MarkerPosition } from 'src/types.d'
+import {
+  type savePreviousFrame,
+  type MarkerPosition,
+  type Character,
+} from 'src/types.d'
 import type React from 'preact/compat'
 import { cloudinaryFormDataFnct } from '@/data/cloudinaryFormData'
 

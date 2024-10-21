@@ -1,4 +1,5 @@
 ---
+import { getLangFromUrl } from 'src/i18n/utils'
 interface Props {
   character: string
   description: string
@@ -7,7 +8,9 @@ interface Props {
 }
 
 const { character, description, imageUrl1, imageUrl2 } = Astro.props
-const gameUrl = `/game/${character.replace(' ', '_')}`
+
+const lang = getLangFromUrl(Astro.url)
+const gameUrl = `${lang}/game/${character.replace(' ', '_')}`
 ---
 
 <article
