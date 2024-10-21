@@ -6,3 +6,11 @@ export interface GameProps {
   miduHelpTxt: string
   surrenderTxt: string
 }
+
+export interface savePreviousFrame {
+  x: number
+  y: number
+  zoom: number
+}
+
+export type MarkerPosition = { x: number; y: number }
