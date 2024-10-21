@@ -1,0 +1,21 @@
+---
+import ghost1 from '../assets/imgs/ghost_1.webp'
+import ghost2 from '../assets/imgs/ghost_2.webp'
+---
+
+<div
+  class='absolute bg-transparent pointer-events-none'
+  style={{ width: '100vw', height: '100vh' }}
+>
+  <img
+    class='absolute top-10 right-20 opacity-80'
+    src={ghost1.src}
+    alt='ghost_1'
+  />
+
+  <img
+    class='absolute top-10 left-20 opacity-80'
+    src={ghost2.src}
+    alt='ghost_2'
+  />
+</div>

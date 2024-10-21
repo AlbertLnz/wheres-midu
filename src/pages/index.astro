@@ -2,6 +2,7 @@
 import Layout from '@/layout/Layout.astro'
 import Typewriter from '@/hooks/useTypewriter'
 import Cards from '@/sections/Cards.astro'
+import Ghosts from '@/components/Ghosts.astro'
 import '@/styles/home.css'
 ---
 
@@ -10,6 +11,7 @@ import '@/styles/home.css'
   description="Where's Midu es una página inspirada en 'Where's Waldo"
   mainClass='relative max-w-7xl flex flex-col items-center justify-center gap-y-10 mx-auto p-8'
 >
+  <Ghosts />
   <header>
     <h1 class='text-7xl tracking-wide'>
       Where&apos;s... <Typewriter client:load text='midudev' speed={200} />
