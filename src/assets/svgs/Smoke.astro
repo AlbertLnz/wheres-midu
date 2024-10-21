@@ -1,0 +1,48 @@
+---
+import smoke from '@/assets/imgs/smoke.webp'
+---
+
+<div class='-z-10 absolute top-0 opacity-20 pointer-events-none'>
+  <img src={smoke.src} alt='smoke' class='-z-10 smoke-animation' />
+</div>
+
+<style>
+  @keyframes smoke-move {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
+    25% {
+      transform: translate(-0.2%, -0.2%) scale(1.05);
+    }
+    50% {
+      transform: translate(0.1%, -0.1%) scale(1.1);
+    }
+    75% {
+      transform: translate(-0.1%, 0.2%) scale(1.05);
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+  }
+
+  .smoke-animation {
+    animation: smoke-move 15s ease-in-out infinite;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const smokeImage = document.querySelector<HTMLElement>('.smoke-animation')
+
+    function randomizeMovement() {
+      const randomX = (Math.random() * 2 - 1) * 3
+      const randomY = (Math.random() * 2 - 1) * 3
+
+      if (smokeImage) {
+        smokeImage.style.transform = `translate(${randomX}%, ${randomY}%) scale(1.05)`
+      }
+    }
+
+    setInterval(randomizeMovement, 10000)
+  })
+</script>

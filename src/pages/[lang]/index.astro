@@ -2,6 +2,7 @@
 import Layout from '@/layout/Layout.astro'
 import Typewriter from '@/hooks/useTypewriter'
 import Cards from '@/sections/Cards.astro'
+import Smoke from '@/assets/svgs/Smoke.astro'
 import Ghosts from '@/components/Ghosts.astro'
 import LangSwitcher from '@/components/LangSwitcher.astro'
 import Footer from '@/sections/Footer.astro'
@@ -21,6 +22,7 @@ const t = useTranslations(lang)
   description="Where's Midu es una página inspirada en 'Where's Waldo"
   mainClass='relative max-w-7xl flex flex-col items-center justify-center gap-y-10 mx-auto p-8'
 >
+  <Smoke />
   <!-- <Ghosts /> -->
   <header class='relative w-full flex items-center'>
     <h1 class='text-7xl tracking-wide flex-grow text-center'>
@@ -29,7 +31,7 @@ const t = useTranslations(lang)
     <LangSwitcher />
   </header>
 
-  <p class='text-xs italic'>
+  <p class='text-sm italic text-[#d72e2e]'>
     {t('home.alert')}
   </p>
 

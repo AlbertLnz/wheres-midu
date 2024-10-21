@@ -7,3 +7,21 @@ h1 {
     1px -1px 0 #ff000080,
     -1px 1px 0 #ff000080;
 }
+
+article {
+  border: 2px solid rgba(255, 255, 0, 0.1);
+}
+
+article:hover {
+  border: 2px solid rgba(202, 247, 166, 0.6);
+  background: rgba(202, 247, 166, 0.05);
+
+  h2 {
+    color: #caf7a6;
+    text-shadow: 1px 1px 10px #6eea6e;
+  }
+
+  p {
+    color: #caf7a6;
+  }
+}

@@ -1,4 +1,5 @@
 ---
+import FooterBg from '@/assets/svgs/FooterBg.astro'
 import Heart from '@/assets/svgs/Heart.astro'
 import { useTranslations } from '@/i18n/utils'
 import type { PageLanguages } from '@/types'
@@ -8,9 +9,10 @@ const t = useTranslations(lang)
 ---
 
 <footer
-  class='text-xs text-center space-y-2 flex flex-col items-center justify-center'
+  class='z-10 relative w-screen mt-16 text-center space-y-2 flex flex-col items-center justify-center'
 >
-  <p class='flex gap-x-1'>
+  <FooterBg class='-z-10 absolute w-full opacity-50' />
+  <p class='flex items-center justify-center gap-x-1'>
     <a
       href='https://stickerly.pstatic.net/sticker_pack/RoQKd7eh2a6EUxtCfRXefw/PTDFFC/16/1673169482169.png'
       target='_blank'
@@ -27,13 +29,13 @@ const t = useTranslations(lang)
         {t('home.footer.4')}
       </a>
     </span>
-    <p>
+    <p class='italic'>
       {t('home.footer.author')}
       <span class='hover:underline'>
         <a href='https://github.com/albertlnz' target='_blank'>AlbertLnz</a>
       </span>
     </p>
-    <p class='text-[10px] italic pt-4'>
+    <p class='text-xs italic pt-4'>
       {t('home.footer.info')}
     </p>
   </p>

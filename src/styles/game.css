@@ -1,10 +1,7 @@
 @media (width < 1300px) {
   body {
-    background-colro: #171717;
-  }
-
-  #root {
     display: none;
+    background-color: #010101;
   }
 }
 

@@ -11,7 +11,7 @@ export const ui = {
       'Las imágenes del juego están diseñadas por IA, por lo que su resultado en facciones es limitada.',
     'home.card.title': '¿Dónde está',
     'home.card.midu':
-      'se encuentra en una batalla campal entre los fanáticos de React y los entusiastas de Angular. Pero como mago de JavaScript, intentará escapar de toda polémica. ¿Sobrevirá a la batalla? ¡Encuéntralo antes de que lo funen',
+      'se encuentra en una batalla campal entre los fanáticos de React y los entusiastas de Angular. Pero como mago de JavaScript, intentará escapar de toda polémica. ¿Sobrevirá a la batalla? ¡Encuéntralo antes de que lo funen!',
     'home.card.altman':
       'está buscando ansiosamente financiamiento para crear Chat-GPT5, pero para ello, se ha convertido en una momia más para pasar desapercibido con otras viejas momias con mucho dinero. ¿Dónde estará Altman?',
     'home.card.php':
