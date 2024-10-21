@@ -3,9 +3,10 @@ import Layout from '@/layout/Layout.astro'
 import Typewriter from '@/hooks/useTypewriter'
 import Cards from '@/sections/Cards.astro'
 import Ghosts from '@/components/Ghosts.astro'
+import LangSwitcher from '@/components/LangSwitcher.astro'
 import { useTranslations } from 'src/i18n/utils'
-import '@/styles/home.css'
 import { type PageLanguages } from 'src/types.d'
+import '@/styles/home.css'
 
 export function getStaticPaths() {
   return [{ params: { lang: 'en' } }, { params: { lang: 'es' } }]
@@ -19,11 +20,12 @@ const t = useTranslations(lang)
   description="Where's Midu es una página inspirada en 'Where's Waldo"
   mainClass='relative max-w-7xl flex flex-col items-center justify-center gap-y-10 mx-auto p-8'
 >
-  <Ghosts />
-  <header>
-    <h1 class='text-7xl tracking-wide'>
+  <!-- <Ghosts /> -->
+  <header class='relative w-full flex items-center'>
+    <h1 class='text-7xl tracking-wide flex-grow text-center'>
       Where&apos;s... <Typewriter client:load text='midudev' speed={200} />
     </h1>
+    <LangSwitcher />
   </header>
 
   <p class='text-xs italic'>
