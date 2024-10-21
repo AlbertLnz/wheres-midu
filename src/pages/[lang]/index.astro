@@ -4,6 +4,7 @@ import Typewriter from '@/hooks/useTypewriter'
 import Cards from '@/sections/Cards.astro'
 import Ghosts from '@/components/Ghosts.astro'
 import LangSwitcher from '@/components/LangSwitcher.astro'
+import Footer from '@/sections/Footer.astro'
 import { useTranslations } from 'src/i18n/utils'
 import { type PageLanguages } from 'src/types.d'
 import '@/styles/home.css'
@@ -33,4 +34,6 @@ const t = useTranslations(lang)
   </p>
 
   <Cards />
+
+  <Footer />
 </Layout>

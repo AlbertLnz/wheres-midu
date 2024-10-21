@@ -1,0 +1,40 @@
+---
+import Heart from '@/assets/svgs/Heart.astro'
+import { useTranslations } from '@/i18n/utils'
+import type { PageLanguages } from '@/types'
+
+const { lang } = Astro.params as { lang: PageLanguages }
+const t = useTranslations(lang)
+---
+
+<footer
+  class='text-xs text-center space-y-2 flex flex-col items-center justify-center'
+>
+  <p class='flex gap-x-1'>
+    <a
+      href='https://stickerly.pstatic.net/sticker_pack/RoQKd7eh2a6EUxtCfRXefw/PTDFFC/16/1673169482169.png'
+      target='_blank'
+    >
+      <Heart class='size-4' />
+    </a>
+    {t('home.footer.1')}
+    <span class='hover:underline'>
+      <a href='https://cloudinary.com/' target='_blank'>{t('home.footer.2')}</a>
+    </span>
+    {t('home.footer.3')}
+    <span class='hover:underline'>
+      <a href='https://www.twitch.tv/midudev' target='_blank'>
+        {t('home.footer.4')}
+      </a>
+    </span>
+    <p>
+      {t('home.footer.author')}
+      <span class='hover:underline'>
+        <a href='https://github.com/albertlnz' target='_blank'>AlbertLnz</a>
+      </span>
+    </p>
+    <p class='text-[10px] italic pt-4'>
+      {t('home.footer.info')}
+    </p>
+  </p>
+</footer>

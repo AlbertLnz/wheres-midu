@@ -21,6 +21,13 @@ export const ui = {
     'home.card.colby':
       'lleva más de 837 horas despierto contestando las preguntas del foro de Discord y se ha convertido en un zombie. Encuentrálo, dale las gracias por toda su atención y mándalo a descansar.',
     'home.card.collaborate': '+ Colaborar',
+    'home.footer.1': 'para el equipo de',
+    'home.footer.2': 'Cloudinary',
+    'home.footer.3': ', Midu y la gente de',
+    'home.footer.4': 'Twitch',
+    'home.footer.author': 'Creado por',
+    'home.footer.info':
+      'Aunque no hay revisión de código, he intentado hacer el juego lo más simple posible y siguiendo las buenas prácticas',
 
     'game.backBtn': '← Volver',
     'game.info.1': 'Para marcar una respuesta,',
@@ -72,6 +79,13 @@ export const ui = {
     'home.card.colby':
       'has been awake for over 837 hours answering questions on the Discord forum and has become a zombie. Find him, thank him for all his attention and send him to rest.',
     'home.card.collaborate': '+ Collaborate',
+    'home.footer.1': 'for the',
+    'home.footer.2': 'Cloudinary',
+    'home.footer.3': 'team, Midu and the people of',
+    'home.footer.4': 'Twitch',
+    'home.footer.author': 'Created by',
+    'home.footer.info':
+      'Although there is no code review, I have tried to make the game as simple as possible and following best practices.',
 
     'game.backBtn': '← Back',
     'game.info.1': 'To mark an answer,',

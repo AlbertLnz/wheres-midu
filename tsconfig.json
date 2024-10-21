@@ -11,7 +11,10 @@
       "@/pages/*": ["src/pages/*"],
       "@/styles/*": ["src/styles/*"],
       "@/sections/*": ["src/sections/*"],
-      "@/data/*": ["src/data/*"]
+      "@/data/*": ["src/data/*"],
+      "@/i18n/*": ["src/i18n/*"],
+      "@/*": ["src/*"],
+      "@/assets/*": ["src/assets/*"]
     }
   }
 }
