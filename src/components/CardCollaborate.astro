@@ -1,0 +1,20 @@
+---
+import { useTranslations } from 'src/i18n/utils'
+const { lang } = Astro.props
+
+const t = useTranslations(lang)
+---
+
+<article
+  class='relative card group flex gap-x-4 border-2 border-dashed border-red-950 px-2 pt-2 rounded-lg items-center justify-center hover:cursor-pointer hover:bg-yellow-900/10'
+>
+  <h3 class='text-3xl group-hover:scale-125 transition-transform duration-300'>
+    {t('home.card.collaborate')}
+  </h3>
+  <a
+    href='https://github.com/AlbertLnz/wheres-midu'
+    target='_blank'
+    class='absolute h-full w-full'
+  >
+  </a>
+</article>

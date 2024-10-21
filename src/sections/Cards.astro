@@ -2,6 +2,7 @@
 import type { PageLanguages } from 'src/types'
 import Card from '@/components/Card.astro'
 import { useTranslations } from 'src/i18n/utils'
+import CardCollaborate from '@/components/CardCollaborate.astro'
 
 const { lang } = Astro.params as { lang: PageLanguages }
 const t = useTranslations(lang)
@@ -42,4 +43,6 @@ const t = useTranslations(lang)
     imageUrl1={'./assets/imgs/cards/colby1.webp'}
     imageUrl2={'./assets/imgs/cards/colby2.webp'}
   />
+
+  <CardCollaborate lang={lang} />
 </section>

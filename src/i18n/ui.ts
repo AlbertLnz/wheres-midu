@@ -20,6 +20,7 @@ export const ui = {
       'se ha vuelto a transformar por 4931 vez. Yo sigo sin saber reconocerla, pero dicen que se ha convertido en una vampira. Encuéntrala antes de que vuelva a cambiar de look y pídele un autógrafo de mi parte.',
     'home.card.colby':
       'lleva más de 837 horas despierto contestando las preguntas del foro de Discord y se ha convertido en un zombie. Encuentrálo, dale las gracias por toda su atención y mándalo a descansar.',
+    'home.card.collaborate': '+ Colaborar',
 
     'game.backBtn': '← Volver',
     'game.info.1': 'Para marcar una respuesta,',
@@ -70,6 +71,7 @@ export const ui = {
       "has transformed for the 4931st time. I still can't recognize her, but they say she has become a vampire. Find her before she changes her look again and ask for an autograph on my behalf.",
     'home.card.colby':
       'has been awake for over 837 hours answering questions on the Discord forum and has become a zombie. Find him, thank him for all his attention and send him to rest.',
+    'home.card.collaborate': '+ Collaborate',
 
     'game.backBtn': '← Back',
     'game.info.1': 'To mark an answer,',
