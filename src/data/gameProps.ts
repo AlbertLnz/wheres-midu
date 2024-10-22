@@ -6,32 +6,32 @@ export function gameProps(lang: PageLanguages, character: Character) {
 
   const gamePropsInfo: Record<Character, GameProps> = {
     Midudev: {
-      imgStringId: 'qfcwvkcfpdxcom1nb1d9',
-      positionAnswers: { x: 687.1609014001452, y: 751.9959950962743 },
+      imgStringId: 'p4ycfe6jpiddv269ercf',
+      positionAnswers: { x: 1108.885342744734, y: 191.29497813100062 },
       miduHelpTxt: t('game.miduHelpTxt.midu'),
       surrenderTxt: t('game.surrenderTxt.midu'),
     },
     Altman: {
-      imgStringId: 'ejp3m8ha77kktxhnsdu4',
-      positionAnswers: { x: 123, y: 456 },
+      imgStringId: 'x2k5fyp96c3il7tevhgb',
+      positionAnswers: { x: 553.5874517882188, y: 904.2516668444634 },
       miduHelpTxt: t('game.miduHelpTxt.altman'),
       surrenderTxt: t('game.surrenderTxt.altman'),
     },
     PHP: {
-      imgStringId: 'gzy8tlrfjbygy7aw5mmm',
-      positionAnswers: { x: 123, y: 456 },
+      imgStringId: 'igsclbcucvcrlwurlnye',
+      positionAnswers: { x: 535.5236048419966, y: 440.41467089822913 },
       miduHelpTxt: t('game.miduHelpTxt.php'),
       surrenderTxt: t('game.surrenderTxt.php'),
     },
     Lady_Gaga: {
-      imgStringId: 'ow5wyljx6yxkrxacow1b',
-      positionAnswers: { x: 123, y: 456 },
+      imgStringId: 'gadpdqbnltidlmmpqpf3',
+      positionAnswers: { x: 82.84699897315167, y: 701.7238238745466 },
       miduHelpTxt: t('game.miduHelpTxt.gaga'),
       surrenderTxt: t('game.surrenderTxt.gaga'),
     },
     Colby: {
-      imgStringId: 'ow5wyljx6yxkrxacow1b',
-      positionAnswers: { x: 123, y: 456 },
+      imgStringId: 'ebhegso1cpnhbjxitxvh',
+      positionAnswers: { x: 1036.2567134537428, y: 870.600790146545 },
       miduHelpTxt: t('game.miduHelpTxt.colby'),
       surrenderTxt: t('game.surrenderTxt.colby'),
     },

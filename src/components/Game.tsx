@@ -199,6 +199,14 @@ const Game = ({
             x: x * scaleX,
             y: y * scaleY,
           }
+          console.log('MARKER', markerPositionRef.current)
+          console.log('RECT', rect)
+          console.log('CANVAS', canvas)
+          console.log(
+            'result',
+            markerPositionRef.current.x - rect.x,
+            markerPositionRef.current.y - rect.y
+          )
         }
       }
     }

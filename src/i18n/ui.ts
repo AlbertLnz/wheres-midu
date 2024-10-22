@@ -36,11 +36,15 @@ export const ui = {
     'game.miduHelpTxt':
       'Activa la miduAyuda para obtener una pista de donde está',
     'game.miduHelpTxt.midu':
-      'Midu se encuentra en un lugar seguro, donde nadie lo puede ver, acompañado de miduGato y su framework favorito.',
-    'game.miduHelpTxt.altman': 'Altman está en...',
-    'game.miduHelpTxt.php': 'PHP está en...',
-    'game.miduHelpTxt.gaga': 'Gaga está en...',
-    'game.miduHelpTxt.colby': 'Colby está en...',
+      'Midu se encuentra en un lugar seguro, observando la batalla desde su setup junto a miduGato y su framework favorito.',
+    'game.miduHelpTxt.altman':
+      'Altman sigue de muy cerca la charla, al acecho de conseguir su sueño',
+    'game.miduHelpTxt.php':
+      'PHP está en junto a su gran tumba, pero se resiste a entrar en ella.',
+    'game.miduHelpTxt.gaga':
+      'Lady Gaga está descansando apartada de la multitud en su castillo de vampira con vistas al mar.',
+    'game.miduHelpTxt.colby':
+      'Colby está siendo engullido por un participante que no consiguió resolver su duda.',
 
     'game.cloudinaryHelp.title': 'La Cloudinary ayuda',
     'game.miduHelp.title': 'La MiduAyuda',
@@ -49,10 +53,13 @@ export const ui = {
 
     'game.surrenderTxt.midu':
       'Me rindo... Dejaré morir a Midu y que se lo coman en X',
-    'game.surrenderTxt.altman': 'Me rindo...(Altman)',
-    'game.surrenderTxt.php': 'Me rindo... (PHP)',
-    'game.surrenderTxt.gaga': 'Me rindo... (Gaga)',
-    'game.surrenderTxt.colby': 'Me rindo... (Colby)',
+    'game.surrenderTxt.altman': 'Me rindo...Dejar que Altman se vaya al paro',
+    'game.surrenderTxt.php':
+      'Me rindo... Dejaré que PHP muere dejando su gran legado',
+    'game.surrenderTxt.gaga':
+      'Me rindo... No encuentra la enésima tranformación de Lady Gaga',
+    'game.surrenderTxt.colby':
+      'Me rindo... Dejar que Colby muera por no descansar durante la Hackatón',
     'game.surrenderBtn': 'Resolver',
 
     'game.helps.cloudinary1': '- ¡La',
@@ -93,11 +100,15 @@ export const ui = {
     'game.info.3': 'and mark the approximate location with the right button.',
     'game.miduHelpTxt': 'Activate MiduHelp to get a hint about where he is',
     'game.miduHelpTxt.midu':
-      'Midu is in a safe place where no one can see him, accompanied by miduGato and his favorite framework.',
-    'game.miduHelpTxt.altman': 'Altman is in...',
-    'game.miduHelpTxt.php': 'PHP is in...',
-    'game.miduHelpTxt.gaga': 'Gaga is in...',
-    'game.miduHelpTxt.colby': 'Colby is in...',
+      'Midu is in a safe place, watching the battle from his setup alongside miduGato and his favorite framework.',
+    'game.miduHelpTxt.altman':
+      'Altman closely follows the talk, on the lookout to achieve his dream.',
+    'game.miduHelpTxt.php':
+      'PHP is standing next to its large grave, but refuses to enter it.',
+    'game.miduHelpTxt.gaga':
+      'Lady Gaga is resting away from the crowd in her vampire castle overlooking the sea.',
+    'game.miduHelpTxt.colby':
+      "Colby is being swallowed by a participant who couldn't solve their question.",
 
     'game.cloudinaryHelp.title': 'The Cloudinary help',
     'game.miduHelp.title': 'The MiduHelp',
@@ -106,10 +117,13 @@ export const ui = {
 
     'game.surrenderTxt.midu':
       'I give up... I will let Midu die and be eaten in X',
-    'game.surrenderTxt.altman': 'I give up...(Altman)',
-    'game.surrenderTxt.php': 'I give up... (PHP)',
-    'game.surrenderTxt.gaga': 'I give up... (Gaga)',
-    'game.surrenderTxt.colby': 'I give up... (Colby)',
+    'game.surrenderTxt.altman': 'I give up... Let Altman go on unemployment.',
+    'game.surrenderTxt.php':
+      'I give up... I will let PHP die, leaving behind its great legacy',
+    'game.surrenderTxt.gaga':
+      "I give up... It can't find Lady Gaga's umpteenth transformation.",
+    'game.surrenderTxt.colby':
+      'I give up... Let Colby die from not resting during the Hackathon.',
     'game.surrenderBtn': 'Resolve',
 
     'game.helps.cloudinary1': '- The',
