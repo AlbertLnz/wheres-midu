@@ -8,7 +8,7 @@ export const defaultLang = 'es'
 export const ui = {
   es: {
     'home.alert':
-      'Las imágenes del juego están diseñadas por IA, por lo que su resultado en facetas es limitada.',
+      'Las imágenes del juego están diseñadas por IA, por lo que su resultado en expresiones faciales es limitada.',
     'home.card.title': '¿Dónde está',
     'home.card.midu':
       'se encuentra en una batalla campal entre los fanáticos de React y los entusiastas de Angular. Pero como mago de JavaScript, intentará escapar de toda polémica. ¿Sobrevirá a la batalla? ¡Encuéntralo antes de que lo funen!',
@@ -30,6 +30,8 @@ export const ui = {
       'Aunque no hay revisión de código, he intentado hacer el juego lo más simple posible y siguiendo las buenas prácticas',
 
     'game.backBtn': '← Volver',
+    'game.error.attempt': 'Incorrecto',
+    'game.error.marker': 'Marca la posición!',
     'game.info.1': 'Para marcar una respuesta,',
     'game.info.2': 'centra la imagen',
     'game.info.3': 'y marca en el lugar aproximado con el botón derecho.',
@@ -47,6 +49,7 @@ export const ui = {
       'Colby está siendo engullido por un participante que no consiguió resolver su duda.',
 
     'game.cloudinaryHelp.title': 'La Cloudinary ayuda',
+    'game.cloudinaryHelp.text': 'Mejorando la resolución, espere un momento...',
     'game.miduHelp.title': 'La MiduAyuda',
     'game.centerImg.title': 'Centrar la imágen',
     'game.attemptBtn': 'Realizar intento',
@@ -95,6 +98,8 @@ export const ui = {
       'Although there is no code review, I have tried to make the game as simple as possible and following best practices.',
 
     'game.backBtn': '← Back',
+    'game.error.attempt': 'Incorrect',
+    'game.error.marker': 'Mark the position!',
     'game.info.1': 'To mark an answer,',
     'game.info.2': 'center the image',
     'game.info.3': 'and mark the approximate location with the right button.',
@@ -111,6 +116,8 @@ export const ui = {
       "Colby is being swallowed by a participant who couldn't solve their question.",
 
     'game.cloudinaryHelp.title': 'The Cloudinary help',
+    'game.cloudinaryHelp.text':
+      'Improving the resolution, please wait a moment...',
     'game.miduHelp.title': 'The MiduHelp',
     'game.centerImg.title': 'Center the image',
     'game.attemptBtn': 'Make attempt',

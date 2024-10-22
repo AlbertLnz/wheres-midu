@@ -199,14 +199,6 @@ const Game = ({
             x: x * scaleX,
             y: y * scaleY,
           }
-          console.log('MARKER', markerPositionRef.current)
-          console.log('RECT', rect)
-          console.log('CANVAS', canvas)
-          console.log(
-            'result',
-            markerPositionRef.current.x - rect.x,
-            markerPositionRef.current.y - rect.y
-          )
         }
       }
     }
@@ -232,7 +224,7 @@ const Game = ({
     if (cloudinaryHelps === 0) return
 
     setCloudinaryHelps(cloudinaryHelps - 1)
-    setFetchingMsg('Mejorando la resolución, espere un momento...')
+    setFetchingMsg(t('game.cloudinaryHelp.text'))
 
     if (canvasRef.current === null) return
 
@@ -292,7 +284,7 @@ const Game = ({
 
   const handleTestFindIt = () => {
     if (!markerPositionRef.current || !rectRef.current || gameLives < 0) {
-      setFetchingMsg('Marca la posición!')
+      setFetchingMsg(t('game.error.marker'))
       setTimeout(() => {
         setFetchingMsg('')
       }, 2000)
@@ -316,7 +308,7 @@ const Game = ({
       handleShowCharacter()
     } else {
       setGameLives(gameLives - 1)
-      setFetchingMsg('Incorrecto')
+      setFetchingMsg(t('game.error.attempt'))
       setTimeout(() => {
         setFetchingMsg('')
       }, 2000)
