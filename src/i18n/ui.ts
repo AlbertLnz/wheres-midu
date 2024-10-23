@@ -30,6 +30,7 @@ export const ui = {
       'Aunque no hay revisión de código, he intentado hacer el juego lo más simple posible y siguiendo las buenas prácticas',
 
     'game.backBtn': '← Volver',
+    'game.correct.msg': 'CORRECTO! 🥳🎊👏🏼',
     'game.error.attempt': 'Incorrecto',
     'game.error.marker': 'Marca la posición!',
     'game.info.1': 'Para marcar una respuesta,',
@@ -72,7 +73,7 @@ export const ui = {
 
     'game.helps.midu1': '- La',
     'game.helps.midu2': 'miduAyuda',
-    'game.helps.midu3': 'te da una pequeña pista de donde se encuentra Midu.',
+    'game.helps.midu3': 'te da una pequeña pista de donde se encuentra',
   },
   en: {
     'home.alert':
@@ -98,6 +99,7 @@ export const ui = {
       'Although there is no code review, I have tried to make the game as simple as possible and following best practices.',
 
     'game.backBtn': '← Back',
+    'game.correct.msg': 'CORRECT! 🥳🎊👏🏼',
     'game.error.attempt': 'Incorrect',
     'game.error.marker': 'Mark the position!',
     'game.info.1': 'To mark an answer,',
@@ -140,6 +142,6 @@ export const ui = {
 
     'game.helps.midu1': '- The',
     'game.helps.midu2': 'MiduHelp',
-    'game.helps.midu3': 'gives you a small hint about where Midu is.',
+    'game.helps.midu3': 'gives you a small hint about',
   },
 } as const

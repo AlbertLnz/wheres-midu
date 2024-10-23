@@ -305,7 +305,7 @@ const Game = ({
 
     if (isPositionCorrect) {
       setSurrenderState(true)
-      handleShowCharacter()
+      setFetchingMsg(t('game.correct.msg'))
     } else {
       setGameLives(gameLives - 1)
       setFetchingMsg(t('game.error.attempt'))
@@ -330,6 +330,9 @@ const Game = ({
         )}/c_scale,w_0.99/e_upscale/${imgStringId}?_a=DATAg1AAZAA0`
       )
     }
+    setTimeout(() => {
+      setImageUrl(myImage.toURL())
+    }, 3000)
   }
 
   return (
@@ -430,7 +433,7 @@ const Game = ({
           <p>
             {t('game.helps.midu1')}{' '}
             <span className='font-bold'>{t('game.helps.midu2')}</span>{' '}
-            {t('game.helps.midu3')}
+            {t('game.helps.midu3')} {character}
           </p>
         </div>
       </div>
