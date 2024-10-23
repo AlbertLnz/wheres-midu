@@ -41,9 +41,9 @@ export const ui = {
     'game.miduHelpTxt.midu':
       'Midu se encuentra en un lugar seguro, observando la batalla desde su setup junto a miduGato y su framework favorito.',
     'game.miduHelpTxt.altman':
-      'Altman sigue de muy cerca la charla, al acecho de conseguir su sueño',
+      'Altman sigue de muy cerca la charla, al acecho de conseguir su sueño de una nueva IA.',
     'game.miduHelpTxt.php':
-      'PHP está en junto a su gran tumba, pero se resiste a entrar en ella.',
+      'PHP está junto a su gran tumba, pero se resiste a entrar en ella.',
     'game.miduHelpTxt.gaga':
       'Lady Gaga está descansando apartada de la multitud en su castillo de vampira con vistas al mar.',
     'game.miduHelpTxt.colby':
@@ -109,9 +109,9 @@ export const ui = {
     'game.miduHelpTxt.midu':
       'Midu is in a safe place, watching the battle from his setup alongside miduGato and his favorite framework.',
     'game.miduHelpTxt.altman':
-      'Altman closely follows the talk, on the lookout to achieve his dream.',
+      'Altman closely follows the conversation, eager to achieve his dream of a new AI.',
     'game.miduHelpTxt.php':
-      'PHP is standing next to its large grave but refuses to enter it.',
+      "PHP is standing next to it's large grave but refuses to enter it.",
     'game.miduHelpTxt.gaga':
       'Lady Gaga is resting away from the crowd in her vampire castle overlooking the sea.',
     'game.miduHelpTxt.colby':
