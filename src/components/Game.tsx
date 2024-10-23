@@ -233,7 +233,6 @@ const Game = ({
 
     const formData = await cloudinaryFormDataFnct()
     formData.append('file', img, 'image.webp')
-    console.log(Object.fromEntries(formData.entries()))
 
     fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
       method: 'POST',

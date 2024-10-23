@@ -50,7 +50,9 @@ CLOUDINARY_CLOUD_NAME=
 CLOUDINARY_IMGS_FOLDER=wheres-midu
 ```
 
-4. Run the development server 🌠
+4. Configure your Cloudinary account with an **Upload Preset** named `wheres-midu` and set it as **Unsigned**.
+
+5. Run the development server 🌠
 
 ```bash
 npm run dev
